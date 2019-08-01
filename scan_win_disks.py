@@ -45,7 +45,7 @@ for i in host_array:
         regex = re.compile(r'([A-Z]):\\ used\'=(\d+\.?\d*\w*;?){5}')
         host_disks[i] = [ d[0] for d in  regex.findall(stdout.strip())]
         prog += 1
-        progress(prog, lines, status='status')
+        progress(prog, lines, status='progress')
 
 with open(args.output, 'w') as json_file:
         json_file.write(json.dumps([host_disks]))
