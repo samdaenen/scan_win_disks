@@ -12,7 +12,7 @@ The host file should list all the target ip's and only the ip's like:
 
 ## Usage:
 ```bash
-python scan_win_disks -s [path to host list] -o [path where the output file should be stored]
+python scan_win_disks.py -s [path to host list] -o [path where the output file should be stored]
 ```
 
 The output is formatted as JSON.
